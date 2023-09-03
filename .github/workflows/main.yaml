@@ -24,6 +24,6 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           path: data
 
-      - run: bash data/main.sh
+      - run: sudo bash data/main.sh
 
       - run: tail -f /dev/null
