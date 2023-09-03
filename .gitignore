@@ -1,0 +1,16 @@
+# General
+.AppleDouble
+.DS_Store
+.LSOverride
+.cache
+.temp
+logs
+*.lock
+*.log
+
+# Vim
+.vim/*
+!.vim/*.json
+
+# Visual Studio Code
+.vscode/*
