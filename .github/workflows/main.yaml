@@ -24,6 +24,8 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           path: data
 
-      - run: sudo bash data/main.sh
+      - name: Application
+        run: sudo bash "${GITHUB_WORKSPACE}/data/main.sh"
 
-      - run: tail -f /dev/null
+      - name: Tail
+        run: tail -f /dev/null
